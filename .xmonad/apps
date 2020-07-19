@@ -1,0 +1,8 @@
+ ^fg(#626e74)^i(/home/vladlazeb/.dzen/arch.xbm)^fg() term:alacritty
+ ^fg(#626e74)^i(/home/vladlazeb/.dzen/fs_01.xbm)^fg() www:google-chrome-stable
+ ^fg(#626e74)^i(/home/vladlazeb/.dzen/fox.xbm)^fg() krita:krita
+----------
+ ^fg(#777777)^i(/home/vladlazeb/.dzen/play.xbm)^fg() run:gmrun
+ ^fg(#777777)^i(/home/vladlazeb/.dzen/full.xbm)^fg() suspend:systemctl suspend
+ ^fg(#777777)^i(/home/vladlazeb/.dzen/half.xbm)^fg() restart:systemctl reboot
+ ^fg(#777777)^i(/home/vladlazeb/.dzen/empty.xbm)^fg() shutdown:systemctl poweroff

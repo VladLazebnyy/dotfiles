@@ -1,0 +1,75 @@
+
+xmonad.hs:53:7: warning: [-Wtabs]
+    Tab character found here, and in 425 further locations.
+    Please use spaces instead.
+   |
+53 | myFont          = "-*-nu-*-*-*-*-*-*-*-*-*-*-*-*"
+   |       ^^
+
+xmonad.hs:71:35: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+71 |                 tiled           = spacing 5 $ ResizableTall nmaster delta ratio [] 
+   |                                   ^^^^^^^
+
+xmonad.hs:72:35: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+72 |                 tiledSpace      = spacing 30 $ ResizableTall nmaster delta ratio [] 
+   |                                   ^^^^^^^
+
+xmonad.hs:73:35: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+73 |                 bigMonitor      = spacing 5 $ ThreeColMid nmaster delta ratio 
+   |                                   ^^^^^^^
+
+xmonad.hs:104:45: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+    |
+104 | newManageHook = myManageHook <+> manageHook defaultConfig
+    |                                             ^^^^^^^^^^^^^
+
+xmonad.hs:109:34: warning: [-Wdeprecations]
+    In the use of ‘defaultPP’ (imported from XMonad.Hooks.DynamicLog):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad.Hooks.DynamicLog) instead."
+    |
+109 | myLogHook h = dynamicLogWithPP ( defaultPP
+    |                                  ^^^^^^^^^
+
+xmonad.hs:149:23: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+    |
+149 |         xmonad $ ewmh defaultConfig
+    |                       ^^^^^^^^^^^^^
+
+xmonad.hs:191:88: warning: [-Woverflowed-literals]
+    Literal -20 is out of the GHC.Word.Word32 range 0..4294967295
+    |
+191 |                 ,((mod1Mask                     , xK_a), withFocused (keysMoveWindow (-20,0)))
+    |                                                                                        ^^
+
+xmonad.hs:192:90: warning: [-Woverflowed-literals]
+    Literal -20 is out of the GHC.Word.Word32 range 0..4294967295
+    |
+192 |                 ,((mod1Mask                     , xK_d), withFocused (keysMoveWindow (0,-20)))
+    |                                                                                          ^^
+
+xmonad.hs:195:90: warning: [-Woverflowed-literals]
+    Literal -20 is out of the GHC.Word.Word32 range 0..4294967295
+    |
+195 |                 ,((mod1Mask .|. shiftMask       , xK_a), withFocused (keysResizeWindow (-20,0) (0,0)))
+    |                                                                                          ^^
+
+xmonad.hs:196:92: warning: [-Woverflowed-literals]
+    Literal -20 is out of the GHC.Word.Word32 range 0..4294967295
+    |
+196 |                 ,((mod1Mask .|. shiftMask       , xK_d), withFocused (keysResizeWindow (0,-20) (0,0)))
+    |                                                                                            ^^

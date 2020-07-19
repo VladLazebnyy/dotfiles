@@ -1,0 +1,4 @@
+#!/bin/sh
+
+~/.fehbg &
+/usr/bin/picom --config /home/vladlazeb/.config/picom.conf & 
